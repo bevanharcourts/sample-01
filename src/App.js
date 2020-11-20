@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter, Route, Switch } from "react-router-dom";
+import { Router, Route, Switch } from "react-router-dom";
 import { Container } from "reactstrap";
 
 import Loading from "./components/Loading";
@@ -30,7 +30,7 @@ const App = () => {
   }
 
   return (
-    <BrowserRouter history={history} basename={"/sample-01"}>
+    <Router history={history} basename={"/sample-01"}>
       <div id="app" className="d-flex flex-column h-100">
         <NavBar />
         <Container className="flex-grow-1 mt-5">
@@ -42,7 +42,7 @@ const App = () => {
         </Container>
         <Footer />
       </div>
-    </BrowserRouter>
+    </Router>
   );
 };
 
